@@ -1,0 +1,26 @@
+body {
+    background-color: #eee;
+}
+
+ul {
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    /*padding: 15px;*/
+    padding-left: 0px;
+    list-style-type: none;
+    /*circle: círculo sin relleno, square: cuadrado, upper-roman: números romanos, lower-alpha: abecedario*/
+}
+
+li {
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+
+/*
+ul li {
+    list-style-type: inherit;
+    
+
+}*/

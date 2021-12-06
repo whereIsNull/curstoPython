@@ -1,0 +1,35 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    /*tipo de letra*/
+    font-style: italic;
+    /*Estilo de fuente (italic, oblique)*/
+    font-size: 1.5em;
+    /*Tamaño de la fuente: en px o en em(referencia del navegador para el tamaño de fuente)*/
+    font-weight: 200;
+    /*Peso de la fuente (numérico o bold, etc)*/
+    color: #222fff;
+    text-align: left;
+    /*justify, right, center*/
+    text-decoration: underline;
+    text-indent: 40px;
+    /*primera línea desplazada a la derecha*/
+    line-height: 1.7;
+    /*separación entre líneas*/
+    word-spacing: 10px;
+    /*espacio entre palabras*/
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+    /*sombras del texto, primero desplazamiento hacia derecha, segundo hacia abajo. tercero qué difuminado*/
+}
+
+a {
+    text-decoration: none;
+    /*none: sin subrayado, overline: linea por encima, line-through: tachado, underline: subrayado*/
+    text-transform: uppercase;
+    /*uppercase, lowercase, capitalize (primera de cada palabra en mayúscula)*/
+    letter-spacing: 3px;
+    /*Separación entre letras*/
+}
