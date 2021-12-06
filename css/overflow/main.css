@@ -1,0 +1,13 @@
+body {
+    background-color: #eee;
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    /*visible, hidden (el contenido que no quepa va a quedar oculto), 
+    scroll (agrega barra para poder ver todo el contenido), auto(agrega scrolls sólo si necesarios)*/
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

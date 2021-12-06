@@ -1,0 +1,16 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    max-width: 350px;
+    background-color: #f00;
+    margin: auto;
+    /*solo con display:block*/
+    position: relative;
+    /*por defecto static. fixed: fija el contenido en la pantalla (frecuente en menús superiores)*/
+    right: 15px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+}
