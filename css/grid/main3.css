@@ -1,0 +1,35 @@
+/*cssgridgarden.com*/
+
+
+/*Alinear todo el grid con el contenido de la página*/
+
+html {
+    height: 100%;
+}
+
+.body {
+    background-color: #eee;
+    margin: 0;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+    justify-content: space-around;
+    /*espacio entre columnas*/
+    justify-content: space-between;
+    /*espacio entre columnas pero no al principio y fin, sólo entre celdas*/
+    justify-content: space-evenly;
+    /*espacio entre columnas con el mismo espacio entre celdas y principio y fin*/
+    align-content: space-between;
+    /*igual que justify pero para filas: *No me está funcionando en chrome*/
+}
+
+.red {
+    background-color: red;
+}
