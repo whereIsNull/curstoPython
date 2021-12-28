@@ -1,0 +1,23 @@
+body {
+    background-color: #eee;
+}
+
+.box {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /*propiedad que quiero que cambie (ej: width, si no se indica son todas) y cada cuanto tiempo*/
+    transition-delay: 0.3s;
+}
+
+.box:hover {
+    width: 150px;
+    /*propiedad que "transiciona" al pasar mouse por encima*/
+    transform: scale(1.05, 1.05);
+    background-color: rgba(0, 0, 0, 0.1);
+}

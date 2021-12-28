@@ -1,0 +1,35 @@
+.body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "header header" "content sidebar" "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px;
+    /*propiedad para todas las filas que no estén definidas en grid-template-*. */
+    /*grid-auto-flow: row o column;*/
+    justify-items: stretch;
+    align-items: center;
+    /*alinear y justificar todos los elementos del grid*/
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.header {
+    grid-column: col-inicio / col-fin 3;
+    grid-row: row-inicio / row-fin 3
+}
+
+.item-1 {
+    justify-self: center;
+    align-self: center;
+    /*justifica y alinea sólo este elemento dentro del grid*/
+}
