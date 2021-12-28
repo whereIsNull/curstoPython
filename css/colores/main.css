@@ -1,0 +1,14 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    /*background-color: rgba(0, 0, 255, 0.4);*/
+    /*rojo, verde, azul y opacidad*/
+    /*background-color: hsl(120, 60%, 70%, 0.3);
+    opacity: 1;*/
+    /*------------------*/
+    background-image: linear-gradient(to right, red, blue);
+    /*para gradiente de colores(direccion, color1, color2 [, color3...]). Direccion: to right, to left, to bottom, to bottom right (diagonal)...*/
+    background-image: repeating-linear-gradient(to right, red, blue);
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+}
+
+.fondo {
+    background-color: green;
+    background-image: url("https://placekitten.com/200/300");
+    /*se recorta o multiplica la imagen hasta completar la altura del elemento block en la que está*/
+    height: 400px;
+    background-repeat: no-repeat;
+    /*repeat-x o repeat-y: para repetir sólo en horizontal o vertical*/
+    background-position: right bottom;
+    /*desde donde queremos que se renderice la imagen (por defecto left-top)*/
+    background-attachment: fixed;
+    /*por defecto scroll. Idica si se fija la imagen al hacer sroll*/
+    background-size: cover;
+    /*todas las propiedades de arriba en una sola línea (tiene que ser en el mismo orden):*/
+    /*background: green url("https://placekitten.com/200/300") no-repeat right bottom fixed cover;*/
+}
