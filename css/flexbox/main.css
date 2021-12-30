@@ -1,0 +1,23 @@
+body {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    /*flex-direction: column;*/
+    /*row, row-reverse, column, column-reverse*/
+    /*flex-wrap: wrap;*/
+    /*para envolver o no el contenido en el espacio reservado o no*/
+    flex-flow: row wrap;
+    /*propiedad que agrupa flex-direction y flex-wrap*/
+    justify-content: space-evenly;
+    /*alinear el contenido: flex-start, flex-end, flex-center, space-between, space-evenly, space-around*/
+    align-items: stretch;
+    height: 200px;
+    align-content: space-evenly;
+    /*indica cómo distribuir el contenido dentro de todo el elemento de esta clase*/
+}
+
+.red {
+    background-color: red;
+}

@@ -1,0 +1,38 @@
+body {}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+.primero {
+    flex-grow: 1;
+    /*0 por defecto*/
+    flex-basis: 120px;
+    /*tamaño inicial, usado en conjunto con flex-grow para determinar el espacio*/
+    flex: 1 120px;
+    /*Agrupa las propiedades flex-grow y flex-basis*/
+}
+
+.segundo {
+    flex-grow: 1;
+}
+
+.tercero {
+    flex-grow: 2;
+    align-self: center;
+    /*alinea el elemento dentro del flex: auto, flex-start, flex-end, center, baseline, stretch*/
+}
+
+.cuarto {}
+
+.quinto {}
+
+.sexto {
+    order: 0;
+}

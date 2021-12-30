@@ -1,0 +1,37 @@
+body {
+    width: 200px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    height: 200px;
+}
+
+.red {
+    background-color: red;
+}
+
+.primero {
+    order: 1;
+}
+
+.segundo {
+    order: 0;
+}
+
+.tercero {
+    order: -1;
+}
+
+.cuarto {
+    order: 0;
+}
+
+.quinto {
+    order: 0;
+}
+
+.sexto {
+    order: 0;
+}
