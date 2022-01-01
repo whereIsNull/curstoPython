@@ -36,4 +36,9 @@ midb.commit
 cursor.execute('select * from Usuario')
 resultado = cursor.fetchall()
 
+#Limitar resultados
+cursor.execute('select * from Usuario limit 1')
+resultado = cursor.fetchall()
+
+
 print(resultado)
