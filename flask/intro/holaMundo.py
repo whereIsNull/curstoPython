@@ -6,7 +6,7 @@
 # sudo apt install python3-flask
 # flask run
 
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, url_for, redirect, abort, render_template
 
 app = Flask(__name__)
 
@@ -33,7 +33,7 @@ def lala(post_id):
     else :
         return 'El otro id ' + post_id
 
-@app.route('/lele')
+@app.route('/lele', methods=['POST','GET'])
 def lele():
     cursor.execute('select * from usuario')
     usuarios = cursor.fetchall()
@@ -54,3 +54,20 @@ def crear():
         midb.commit()
         return redirect(url_for('lele'))
     return render_template('crear.html')
+
+@app.route('/getJSON', methods = ['GET', 'POST'])
+def getJSON():
+    #print(url_for('index')) #Nombre de la función, en este caso equivaldría a la ruta '/'
+    # print(url_for('lala', post_id = 2)) #Nombre de la función, en este caso equivaldría a la ruta '/lala' y el segundo argumento el parámetro de la función
+    # print(request.form)
+    # print(request.form['llave1'])
+    #abort(401) #Envía error, parámetro: código http
+    #return redirect(url_for('lala', post_id = 2)) #Para redireccionar es imprescindible hadcerlo en el return
+    #return 'lele'
+    
+    # return render_template('lele.html') #flask busca la ruta 'templates/lele.html'
+
+    return {
+        'username': 'chanchito',
+        'email': 'chanch@chanch.com'
+    } #Devuelve un JSON
