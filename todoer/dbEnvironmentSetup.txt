@@ -1,0 +1,5 @@
+export FLASK_APP=todo
+export FLASK_DATABASE_HOST=localhost
+export FLASK_DATABASE_DB=prueba
+export FLASK_DATABASE_USER=chanchito
+export FLASK_DATABASE_PASSWORD=chanchito
